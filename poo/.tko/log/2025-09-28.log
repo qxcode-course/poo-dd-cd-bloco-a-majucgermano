@@ -1,0 +1,22 @@
+2025-09-28 18:10:20, MOVE, v:1, k:toalha, mode:DOWN
+2025-09-28 18:34:23, MOVE, v:1, k:animal, mode:DOWN
+2025-09-28 18:34:29, MOVE, v:1, k:carro, mode:DOWN
+2025-09-28 22:07:08, EXEC, v:1, k:py, mode:FREE, size:23
+2025-09-28 22:10:26, EXEC, v:1, k:py, mode:FREE, size:23
+2025-09-28 22:14:29, EXEC, v:1, k:py, mode:FREE, size:23
+2025-09-28 22:33:11, EXEC, v:1, k:py, mode:FREE
+2025-09-28 23:03:00, MOVE, v:1, k:animal, mode:PICK
+2025-09-28 23:03:07, EXEC, v:1, k:animal, mode:FREE, size:23
+2025-09-28 23:06:39, MOVE, v:1, k:animal, mode:PICK
+2025-09-28 23:07:20, EXEC, v:1, k:animal, mode:FREE
+2025-09-28 23:07:50, MOVE, v:1, k:animal, mode:PICK
+2025-09-28 23:08:18, EXEC, v:1, k:animal, mode:FREE
+2025-09-28 23:09:17, MOVE, v:1, k:animal, mode:PICK
+2025-09-28 23:10:26, EXEC, v:1, k:animal, mode:FREE, size:3
+2025-09-28 23:10:41, MOVE, v:1, k:animal, mode:PICK
+2025-09-28 23:10:43, EXEC, v:1, k:animal, mode:FREE
+2025-09-28 23:10:53, MOVE, v:1, k:toalha, mode:PICK
+2025-09-28 23:19:18, MOVE, v:1, k:animal, mode:PICK
+2025-09-28 23:19:28, EXEC, v:1, k:animal, mode:FREE, size:23
+2025-09-28 23:21:28, MOVE, v:1, k:animal, mode:PICK
+2025-09-28 23:21:49, EXEC, v:1, k:animal, mode:FREE

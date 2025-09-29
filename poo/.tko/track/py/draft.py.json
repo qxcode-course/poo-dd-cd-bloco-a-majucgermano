@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-28_22-07-08",
+            "content": "@@ -277,19 +277,13 @@\n .age\n- \n %3E=\n- \n 4:%0A\n-    \n     \n@@ -309,23 +309,15 @@\n     \n-    \n return%0A\n-    \n     \n@@ -368,28 +368,24 @@\n =4:%0A        \n-    \n self.age = 4\n@@ -390,28 +390,24 @@\n  4 %0A        \n-   \n- \n print(...)%0A \n@@ -465,28 +465,24 @@\n  4:%0A        \n-    \n return %22RIP%22\n@@ -510,25 +510,24 @@\n =0:%0A        \n- \n return %22*---\n@@ -529,17 +529,16 @@\n %22*---*%22%0A\n- \n         \n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-09-28_22-10-26",
+            "content": "@@ -452,17 +452,16 @@\n (self)-%3E\n- \n str:%0A   \n@@ -556,16 +556,17 @@\n %22*---*%22%0A\n+ \n         \n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-09-28_22-14-29",
+            "content": "class Animal:\n    def __init__ (self, species:str, sound:str):\n        self.species= species\n        self.sound= sound\n        self.age=0\n    def __str__(self) -> str:\n        return f\"{self.species}:{self.sound}:{self.age}\"\n    def ageBy (self,increment:int):\n        if self.age >= 4:\n            print(...)\n            return\n            self.age+=increment\n        if self.age>=4:\n            self.age = 4 \n            print(...)\n    def makeSound(self)-> str:\n        if self.age == 4:\n            return \"RIP\"\n        if self.age==0:\n         return \"*---*\"\n        return self.sound\n\n\n",
+            "lines": "23"
+        }
+    ]
+}
