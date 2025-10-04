@@ -9,7 +9,8 @@ expanded:
 - bloco_a-treino-de-algoritmos
 - campanha-principal
 - bloco_b-primeiras-classes
-tasks: {}
+tasks:
+  animal: '{rate:25, human:SIM, iagen:SIM, guide:SIM, other:NAO, alone:2, study:300}'
 flags:
   quests: 0
   tracks: 0
