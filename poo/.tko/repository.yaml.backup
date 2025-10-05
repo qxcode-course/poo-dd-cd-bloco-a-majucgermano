@@ -10,6 +10,7 @@ expanded:
 - campanha-principal
 - bloco_b-primeiras-classes
 tasks:
+  toalha: '{rate:100, human:SIM, iagen:SIM, guide:SIM, alone:4, study:180}'
   animal: '{rate:25, human:SIM, iagen:SIM, guide:SIM, other:NAO, alone:2, study:300}'
 flags:
   quests: 0
