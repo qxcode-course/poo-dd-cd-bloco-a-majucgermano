@@ -1,14 +1,25 @@
-remote: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
-lang: py
-filter:
-- BLOCO_A
-- BLOCO_B
-version: 0.0.1
-database: database
+version: '0.2'
+sources:
+- database: database
+  link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
+  type: remote
+  branch: master
+  cache_path: /workspaces/poo-dd-cd-bloco-a-majucgermano/poo/.tko/cache/database.md
+  cache_timestamp: '2025-10-27 23:59:14'
+  filters:
+  - BLOCO_A
+  - BLOCO_B
+- database: local
+  link: ''
+  type: local
+  branch: master
+  cache_path: ''
+  cache_timestamp: ''
+  filters: null
 expanded:
 - bloco_a-treino-de-algoritmos
 - campanha-principal
-- bloco_b-primeiras-classes
+- bloco_b-agregação-simples
 tasks:
   toalha: '{rate:100, human:SIM, iagen:SIM, guide:SIM, alone:4, study:180}'
   animal: '{rate:25, human:SIM, iagen:SIM, guide:SIM, other:NAO, alone:2, study:300}'
@@ -18,4 +29,5 @@ flags:
   tasks: 0
   graph: 0
   xray: 0
-index: animal
+lang: py
+selected: motoca

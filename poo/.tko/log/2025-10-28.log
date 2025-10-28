@@ -1,0 +1,15 @@
+2025-10-28 00:00:06, SELF, v:1, k:motoca
+2025-10-28 00:00:07, MOVE, v:1, k:motoca, mode:DOWN
+2025-10-28 00:00:08, MOVE, v:1, k:motoca, mode:DOWN
+2025-10-28 00:02:34, MOVE, v:1, k:motoca, mode:DOWN
+2025-10-28 00:02:48, MOVE, v:1, k:motoca, mode:DOWN
+2025-10-28 00:03:38, MOVE, v:1, k:motoca, mode:DOWN
+2025-10-28 00:05:40, SELF, v:1, k:motoca
+2025-10-28 00:05:48, MOVE, v:1, k:motoca, mode:DOWN
+2025-10-28 00:08:19, MOVE, v:1, k:motoca, mode:DOWN
+2025-10-28 00:11:46, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:78
+2025-10-28 00:12:56, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0
+2025-10-28 00:28:19, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:102
+2025-10-28 00:36:26, EXEC, v:1, k:poo@motoca, mode:FULL, rate:20, size:102
+2025-10-28 00:41:32, EXEC, v:1, k:poo@motoca, mode:FULL, rate:40, size:102
+2025-10-28 00:44:48, EXEC, v:1, k:poo@motoca, mode:FULL, rate:100, size:102
