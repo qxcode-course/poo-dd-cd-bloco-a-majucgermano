@@ -13,3 +13,11 @@
 2025-10-28 00:36:26, EXEC, v:1, k:poo@motoca, mode:FULL, rate:20, size:102
 2025-10-28 00:41:32, EXEC, v:1, k:poo@motoca, mode:FULL, rate:40, size:102
 2025-10-28 00:44:48, EXEC, v:1, k:poo@motoca, mode:FULL, rate:100, size:102
+2025-10-28 04:18:42, EXEC, v:1, k:poo@grafite, mode:FULL, rate:0
+2025-10-28 04:21:37, EXEC, v:1, k:poo@grafite, mode:FULL, rate:0
+2025-10-28 04:27:25, EXEC, v:1, k:poo@grafite, mode:FULL, rate:0
+2025-10-28 04:29:52, EXEC, v:1, k:poo@grafite, mode:FULL, rate:0, size:90
+2025-10-28 04:31:19, EXEC, v:1, k:poo@grafite, mode:FULL, rate:80, size:90
+2025-10-28 04:31:43, EXEC, v:1, k:poo@grafite, mode:FULL, rate:90, size:90
+2025-10-28 04:32:52, EXEC, v:1, k:poo@grafite, mode:FULL, rate:90
+2025-10-28 04:42:43, EXEC, v:1, k:poo@grafite, mode:FULL, rate:100, size:91

@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-28_04-17-21",
+            "content": "@@ -9,32 +9,30 @@\n ad:%0A    def \n-_\n _init_\n-_\n (self, thick\n@@ -64,17 +64,16 @@\n r, size:\n- \n int):%0A  \n@@ -163,17 +163,21 @@\n  = size%0A\n+    \n %0A\n-\n     def \n@@ -447,16 +447,20 @@\n eturn 0%0A\n+    \n %0A    def\n@@ -452,39 +452,37 @@\n  0%0A    %0A    def \n-_\n _str_\n-_\n (self):%0A        \n@@ -569,16 +569,14 @@\n def \n-_\n _init_\n-_\n (sel\n@@ -652,25 +652,29 @@\n .tip = None%0A\n+    \n %0A\n-\n     def hasG\n@@ -723,17 +723,21 @@\n ot None%0A\n+    \n %0A\n-\n     def \n@@ -996,105 +996,12 @@\n ead%0A\n-%0A\n     \n-def remove(self):%0A        removed = self.tip%0A        self.tip = None%0A        return removed%0A\n %0A   \n@@ -1253,32 +1253,32 @@\n          return%0A\n+\n         if self.\n@@ -1281,1103 +1281,5 @@\n elf.\n-tip.size - gasto %3C 10:%0A            print(%22fail: folha incompleta%22)%0A            return%0A        self.tip.size -= gasto%0A%0A    def __str__(self):%0A        if not self.hasGrafite():%0A            return f%22calibre: %7Bself.thickness:.1f%7D, grafite: null%22%0A        return f%22calibre: %7Bself.thickness:.1f%7D, grafite: %7Bself.tip%7D%22%0A%0Adef main():%0A    pencil = None%0A    while True:%0A        try:%0A            line = input().strip()%0A            if not line:%0A                continue%0A%0A            print(f%22$ %7Bline%7D%22)%0A            parts = line.split()%0A            cmd = parts%5B0%5D%0A%0A            if cmd == %22end%22:%0A                break%0A            elif cmd == %22init%22:%0A                pencil = Pencil(float(parts%5B1%5D))%0A            elif cmd == %22show%22:%0A                print(pencil)%0A            elif cmd == %22insert%22:%0A                lead = Lead(float(parts%5B1%5D), parts%5B2%5D, int(parts%5B3%5D))%0A                pencil.insert(lead)%0A            elif cmd == %22remove%22:%0A                pencil.remove()%0A            elif cmd == %22write%22:%0A                pencil.writePage()%0A        except EOFError:%0A            break%0A%0Aif __name__ == %22__main__%22:%0A    main()\n %0A\n",
+            "lines": "46"
+        },
+        {
+            "label": "2025-10-28_04-29-52",
+            "content": "@@ -1839,16 +1839,17 @@\n rint(f%22$\n+ \n %7Bline%7D%22)\n",
+            "lines": "90"
+        },
+        {
+            "label": "2025-10-28_04-31-19",
+            "content": "@@ -933,17 +933,17 @@\n incompat\n-i\n+%C3%AD\n vel%22)%0A  \n",
+            "lines": "90"
+        },
+        {
+            "label": "2025-10-28_04-31-43",
+            "content": "@@ -1432,39 +1432,8 @@\n a%22)%0A\n-            self.tip.size = 10%0A\n     \n",
+            "lines": "90"
+        },
+        {
+            "label": "2025-10-28_04-42-43",
+            "content": "class Lead:\n    def __init__(self, thickness: float, hardness: str, size: int):\n        self.thickness = thickness\n        self.hardness = hardness\n        self.size = size\n\n    def usagePerSheet(self) -> int:\n        if self.hardness == \"HB\":\n            return 1\n        elif self.hardness == \"2B\":\n            return 2\n        elif self.hardness == \"4B\":\n            return 4\n        elif self.hardness == \"6B\":\n            return 6\n        return 0\n\n    def __str__(self):\n        return f\"[{self.thickness:.1f}:{self.hardness}:{self.size}]\"\n\nclass Pencil:\n    def __init__(self, thickness: float):\n        self.thickness = thickness\n        self.tip = None\n\n    def hasGrafite(self):\n        return self.tip is not None\n\n    def insert(self, lead: Lead):\n        if self.hasGrafite():\n            print(\"fail: ja existe grafite\")\n            return\n        if lead.thickness != self.thickness:\n            print(\"fail: calibre incompativel\")\n            return\n        self.tip = lead\n\n    def remove(self):\n        removed = self.tip\n        self.tip = None\n        return removed\n\n    def writePage(self):\n        if not self.hasGrafite():\n            print(\"fail: nao existe grafite\")\n            return\n        gasto = self.tip.usagePerSheet()\n        if self.tip.size <= 10:\n            print(\"fail: tamanho insuficiente\")\n            return\n        if self.tip.size - gasto < 10:\n            print(\"fail: folha incompleta\")\n            self.tip.size = 10\n            return\n        self.tip.size -= gasto\n\n    def __str__(self):\n        if not self.hasGrafite():\n            return f\"calibre: {self.thickness:.1f}, grafite: null\"\n        return f\"calibre: {self.thickness:.1f}, grafite: {self.tip}\"\n\ndef main():\n    pencil = None\n    while True:\n        try:\n            line = input().strip()\n            if not line:\n                continue\n\n            print(f\"${line}\")\n            parts = line.split()\n            cmd = parts[0]\n\n            if cmd == \"end\":\n                break\n            elif cmd == \"init\":\n                pencil = Pencil(float(parts[1]))\n            elif cmd == \"show\":\n                print(pencil)\n            elif cmd == \"insert\":\n                lead = Lead(float(parts[1]), parts[2], int(parts[3]))\n                pencil.insert(lead)\n            elif cmd == \"remove\":\n                pencil.remove()\n            elif cmd == \"write\":\n                pencil.writePage()\n        except EOFError:\n            break\n\nif __name__ == \"__main__\":\n    main()\n",
+            "lines": "91"
+        }
+    ]
+}
