@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-28_13-20-23",
+            "content": "@@ -11,32 +11,30 @@\n oa:%0A    def \n-_\n _init_\n-_\n (self, nome:\n@@ -530,15 +530,13 @@\n def \n-_\n _str_\n-_\n (sel\n@@ -613,16 +613,14 @@\n def \n-_\n _init_\n-_\n (sel\n@@ -729,25 +729,24 @@\n driver(self,\n- \n nome:str, di\n@@ -2638,29 +2638,25 @@\n %0Aif \n-_\n _name_\n-_\n  == %22_\n-_\n main_\n-_\n %22:%0A \n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-10-28_13-24-28",
+            "content": "@@ -2083,16 +2083,17 @@\n    print\n+ \n (f%22$ %7Bli\n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-10-28_13-24-42",
+            "content": "@@ -1741,16 +1741,17 @@\n    print\n+ \n (f%22Cost:\n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-10-28_13-39-02",
+            "content": "@@ -2086,16 +2086,17 @@\n rint(f%22$\n+ \n %7Bline%7D%22)\n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-10-28_13-42-45",
+            "content": "@@ -1564,223 +1564,8 @@\n o=0%0A\n-        else:%0A                self.__motorista.receber(valor_pago)%0A        print(f%22%7Bself.__passageiro.get_nome()%7D:%7Bself.__passageiro.get_dinheiro()%7D left%22)%0A        self.__passageiro = None%0A         self.__custo = 0%0A\n     \n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-10-28_13-50-15",
+            "content": "@@ -1556,24 +1556,239 @@\n f.__custo=0%0A\n+        else:%0A                self.__motorista.receber(valor_pago)%0A        print(f%22%7Bself.__passageiro.get_nome()%7D:%7Bself.__passageiro.get_dinheiro()%7D left%22)%0A        self.__passageiro = None%0A         self.__custo = 0%0A\n     def show\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-28_13-50-37",
+            "content": "@@ -1245,25 +1245,16 @@\n  return%0A\n-        %0A\n         \n@@ -1259,25 +1259,24 @@\n   valor_pago\n- \n = self.__pas\n@@ -1307,21 +1307,8 @@\n to)%0A\n-            %0A\n     \n@@ -1494,16 +1494,14 @@\n o()%7D\n- \n left%22)\n- \n %0A   \n@@ -1518,33 +1518,32 @@\n elf.__passageiro\n- \n = None%0A         \n@@ -1561,242 +1561,9 @@\n usto\n- = 0%0A        %0A        else:%0A            self.__motorista.receber(valor_pago)%0A            print(f%22%7Bself.__passageiro.get_nome()%7D:%7Bself.__passageiro.get_dinheiro()%7D left%22)%0A            self.__passageiro = None%0A            self.__custo = \n+=\n 0%0A  \n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-10-28_13-53-02",
+            "content": "@@ -1389,17 +1389,17 @@\n (%22fail: \n-P\n+p\n assenger\n",
+            "lines": "84"
+        },
+        {
+            "label": "2025-10-28_13-53-50",
+            "content": "@@ -2927,12 +2927,13 @@\n :%0A    main()\n+%0A\n",
+            "lines": "84"
+        },
+        {
+            "label": "2025-10-28_13-59-06",
+            "content": "@@ -1615,508 +1615,8 @@\n se:%0A\n-            # if there is no driver, refund the passenger and report the error instead of calling receber on None%0A            if self.__motorista is None:%0A                # give the money back to the passenger%0A                self.__passageiro.receber(valor_pago)%0A                print(%22fail: no driver%22)%0A                print(f%22%7Bself.__passageiro.get_nome()%7D:%7Bself.__passageiro.get_dinheiro()%7D left%22)%0A                self.__passageiro = None%0A                self.__custo = 0%0A                return%0A%0A\n     \n",
+            "lines": "84"
+        },
+        {
+            "label": "2025-10-28_14-00-17",
+            "content": "@@ -1603,32 +1603,532 @@\n  %0A        else:%0A\n+            # if there is no driver, refund the passenger and report the error instead of calling receber on None%0A            if self.__motorista is None:%0A                # give the money back to the passenger%0A                self.__passageiro.receber(valor_pago)%0A                print(%22fail: no driver%22)%0A                print(f%22%7Bself.__passageiro.get_nome()%7D:%7Bself.__passageiro.get_dinheiro()%7D left%22)%0A                self.__passageiro = None%0A                self.__custo = 0%0A                return%0A%0A\n             self\n",
+            "lines": "94"
+        },
+        {
+            "label": "2025-10-28_14-01-34",
+            "content": "@@ -512,20 +512,18 @@\n dinheiro\n- \n +=\n- \n valor%0A  \n",
+            "lines": "84"
+        },
+        {
+            "label": "2025-10-28_14-05-37",
+            "content": "@@ -455,29 +455,16 @@\n n valor%0A\n-            %0A\n     def \n@@ -521,18 +521,16 @@\n += valor\n- %0A\n %0A    def\n@@ -1124,17 +1124,16 @@\n stancia%0A\n-%0A\n     def \n@@ -1821,29 +1821,16 @@\n sto = 0%0A\n-            %0A\n     def \n",
+            "lines": "84"
+        },
+        {
+            "label": "2025-10-28_14-08-40",
+            "content": "class Pessoa:\n    def __init__(self, nome:str, dinheiro:int):\n        self.__nome=nome\n        self.__dinheiro=dinheiro\n\n    def get_nome(self):\n        return self.__nome\n    def get_dinheiro(self):\n        return self.__dinheiro\n    def pagar(self, valor:int):\n        if valor > self.__dinheiro:\n            pago = self.__dinheiro\n            self.__dinheiro=0\n            return pago\n        else:\n            self.__dinheiro-=valor\n            return valor\n            \n    def receber(self,valor: int):\n        self.__dinheiro += valor \n\n    def __str__(self):\n        return f\"{self.__nome}:{self.__dinheiro}\"\nclass Moto:\n    def __init__(self):\n        self.__custo=0\n        self.__motorista= None\n        self.__passageiro= None\n    def set_driver(self, nome:str, dinheiro: int):\n        self.__motorista= Pessoa(nome,dinheiro)\n    def set_pass(self, nome:str, dinheiro: int):\n        self.__passageiro= Pessoa(nome,dinheiro)\n    def drive(self, distancia: int):\n        if self.__motorista is None or self.__passageiro is None:\n            print(\"fail: missing drive or passenger\")\n            return\n        self.__custo += distancia\n\n    def leave_pass(self):\n        if self.__passageiro is None:\n            print(\"fail: no passenger\")\n            return\n        \n        valor_pago = self.__passageiro.pagar(self.__custo)\n            \n        if valor_pago < self.__custo:\n            print(\"fail: Passenger does not have enough money\")\n            print(f\"{self.__passageiro.get_nome()}:{self.__passageiro.get_dinheiro()} left\") \n            self.__passageiro = None\n            self.__custo = 0\n        \n        else:\n            self.__motorista.receber(valor_pago)\n            print(f\"{self.__passageiro.get_nome()}:{self.__passageiro.get_dinheiro()} left\")\n            self.__passageiro = None\n            self.__custo = 0\n            \n    def show(self):\n        driver_str = str(self.__motorista) if self.__motorista else \"None\"\n        pass_str=str(self.__passageiro) if self.__passageiro else \"None\"\n        print(f\"Cost: {self.__custo}, Driver: {driver_str}, Passenger: {pass_str}\")\n    \ndef main():\n        moto = Moto()\n        while True:\n            try:\n                line = input()\n                parts = line.strip().split()\n                if len (parts) == 0:\n                    continue\n                cmd = parts[0]\n                print(f\"${line}\")\n                if cmd == \"end\":\n                    break\n                elif cmd == \"show\":\n                    moto.show()\n                elif cmd == \"setDriver\":\n                    moto.set_driver(parts[1], int(parts[2]))\n                elif cmd == \"setPass\":\n                    moto.set_pass(parts[1], int(parts[2]))\n                elif cmd == \"drive\":\n                    moto.drive(int(parts[1]))\n                elif cmd == \"leavePass\":\n                    moto.leave_pass()\n            except EOFError:\n                break\nif __name__ == \"__main__\":\n    main()",
+            "lines": "88"
+        }
+    ]
+}

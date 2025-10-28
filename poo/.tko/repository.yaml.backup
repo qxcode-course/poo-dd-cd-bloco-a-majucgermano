@@ -5,7 +5,7 @@ sources:
   type: remote
   branch: master
   cache_path: /workspaces/poo-dd-cd-bloco-a-majucgermano/poo/.tko/cache/database.md
-  cache_timestamp: '2025-10-28 03:28:40'
+  cache_timestamp: '2025-10-28 14:15:45'
   filters:
   - BLOCO_A
   - BLOCO_B
@@ -24,6 +24,8 @@ tasks:
   toalha: '{rate:100, human:SIM, iagen:SIM, guide:SIM, alone:4, study:180}'
   animal: '{rate:25, human:SIM, iagen:SIM, guide:SIM, other:NAO, alone:2, study:300}'
   motoca: '{human:amigo, iagen:gemini_e_copilot, guide:aula, alone:6, study:180}'
+  grafite: '{human:amigo, iagen:gemini_e_copilot, guide:aula, alone:4, study:140}'
+  motouber: '{human:amigo, iagen:gemini_e_copilot, guide:aula, alone:3, study:180}'
 flags:
   quests: 0
   tracks: 0
@@ -31,4 +33,4 @@ flags:
   graph: 0
   xray: 0
 lang: py
-selected: grafite
+selected: motoca
